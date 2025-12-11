@@ -207,6 +207,46 @@ manohar-g@manohar-g-Lenovo-E41-55:~/rv32$ tree
 
 8 directories, 25 files
 
-```
+##  **Conclusion**
+
+The Tiny Secure RISC-V SoC project successfully demonstrates the complete design journey of a modern System-on-Chip — from RTL architecture to physical-design readiness.
+Through this work, a fully synthesizable **RV32I processor**, a **memory-mapped peripheral subsystem**, and a **hardware-accelerated FIR engine** were designed, verified, and integrated on a unified SoC bus architecture.
+
+The project achieves the following key outcomes:
+
+### ✔ Functional CPU Core
+
+A clean, single-cycle RISC-V core capable of executing essential embedded workloads and controlling peripherals. Its modular RTL design enables easy extension into pipelined or superscalar versions.
+
+### ✔ Peripheral Integration
+
+UART, SPI, and GPIO modules were developed and attached through a well-structured memory map, demonstrating real-world SoC peripheral integration and embedded communication.
+
+### ✔ Hardware Acceleration
+
+The FIR accelerator showcases how compute-intensive tasks can be offloaded from the CPU, leading to significant performance gains. This highlights the relevance of custom accelerators in modern low-power IoT designs.
+
+### ✔ Complete Front-End + Physical-Design Readiness
+
+All modules are written in synthesizable Verilog, lint-clean, simulation-verified, and organized for **OpenLane-based RTL → GDSII** flow, proving the design is suitable for ASIC implementation on the SkyWater 130nm process.
+
+### ✔ Strong Educational & Research Value
+
+The project reflects practical knowledge of:
+
+* Digital architecture
+* RTL design methodology
+* Verification and testbench creation
+* Hardware/software co-design
+* ASIC flow concepts (synthesis, STA, P&R, DRC/LVS, GDSII)
+
+This makes the work not only technically successful but also academically rich and industry-relevant.
+
+---
 
 
+
+**This project demonstrates that a complete, custom SoC — including CPU, peripherals, accelerator, and physical design flow — can be conceived, designed, and validated from scratch using open-source tools and PDKs.**
+It reflects strong competency in digital electronics, VLSI design, and system integration, and provides an excellent foundation for further research, optimization, or real silicon tape-out.
+
+---
