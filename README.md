@@ -1,10 +1,6 @@
 # Tiny Secure RISC-V SoC for Embedded Sensor Systems
 
-### RTL-to-GDSII Academic Project (Without FPGA Implementation)
 
----
-
-## 1. Introduction
 
 This repository presents a complete academic System-on-Chip (SoC) design project implemented entirely at **Register Transfer Level (RTL)** with a clean path toward **ASIC implementation (GDSII)**.
 The SoC is designed for **low-power embedded sensor applications** and integrates:
