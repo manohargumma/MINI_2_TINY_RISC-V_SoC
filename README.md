@@ -38,7 +38,7 @@ A simplified **RV32I single-cycle processor** including:
 * Program Counter
 * Instruction decode path
 * Instruction and data memory interface
-![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/147d65976490d2d01c50558437c80563ff270048/image/ChatGPT%20Image%20Dec%2011%2C%202025%2C%2002_51_44%20PM.png)
+
 
 The core executes a reduced subset of RV32I instructions sufficient for embedded workloads and accelerator control.
 
