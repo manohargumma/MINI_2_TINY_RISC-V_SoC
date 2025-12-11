@@ -1,5 +1,18 @@
 # MINI_2_TINY_RISC-V_SoC
 ![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/f1a10bcf64c7df186d8a1da8a95ccd06b8ccff33/image/full_chip_diagram.png)
+his project implements a compact SoC intended for low-power embedded sensors. The SoC integrates:
+
+A simple RV32I single-cycle CPU (minimal instruction set needed for firmware),
+
+A simple memory-mapped bus to connect CPU to peripherals and memory,
+
+Peripherals: UART (TX/RX) and GPIO,
+
+A hardware FIR accelerator (N-tap, fixed point) accessible through memory-mapped registers,
+
+Testbenches and firmware that exercise the accelerator to demonstrate performance gains vs. software.
+
+The design is written in synthesizable Verilog and organized to support simulation (Icarus/ModelSim), FPGA prototyping, and physical implementation with OpenLane (sky130) if desired.
 ```bash
 manohar-g@manohar-g-Lenovo-E41-55:~/rv32$ tree
 .
