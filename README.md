@@ -1,21 +1,3 @@
-# MINI_2_TINY_RISC-V_SoC
-![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/f1a10bcf64c7df186d8a1da8a95ccd06b8ccff33/image/full_chip_diagram.png)
-Understood.
-You need a **clean, professional, academic-quality GitHub README** that:
-
-✔ Focuses ONLY on RTL → GDS design flow (not FPGA)
-✔ Explains the project clearly to your guide
-✔ Describes the four deliverables (Mini 1, Mini 2, Major 1, Major 2)
-✔ Describes the SoC architecture professionally
-✔ Describes verification, methodology, results, diagrams, and purpose
-✔ Looks like final-year engineering project documentation
-✔ Contains *no unnecessary jargon*, *no FPGA details*, *no clutter*
-✔ Can be directly pasted as your final README.md in GitHub
-
-Below is your **final polished README**, rewritten to look like a real industry-style/academic submission.
-
----
-
 # Tiny Secure RISC-V SoC for Embedded Sensor Systems
 
 ### RTL-to-GDSII Academic Project (Without FPGA Implementation)
@@ -32,6 +14,9 @@ The SoC is designed for **low-power embedded sensor applications** and integrate
 * A compute-intensive **FIR hardware accelerator**
 * A unified **lightweight SoC bus** for communication
 * Simulation and verification environments suitable for RTL signoff
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/f1a10bcf64c7df186d8a1da8a95ccd06b8ccff33/image/full_chip_diagram.png)
+
+
 
 This project addresses the four required sub-deliverables:
 **Mini Project 1**, **Mini Project 2**, **Major Project 1**, and **Major Project 2** — combined into a single, coherent SoC architecture.
