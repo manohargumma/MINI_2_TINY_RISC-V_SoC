@@ -14,12 +14,9 @@ The SoC is designed for **low-power embedded sensor applications** and integrate
 
 
 
-This project addresses the four required sub-deliverables:
-**Mini Project 1**, **Mini Project 2**, **Major Project 1**, and **Major Project 2** — combined into a single, coherent SoC architecture.
 
----
 
-## 2. Project Objectives
+##  Project Objectives
 
 1. **Design a synthesizable RISC-V CPU core** capable of basic arithmetic, load/store, and control-flow instructions.
 2. **Develop essential SoC peripherals** and integrate them using a well-structured memory-mapped architecture.
@@ -28,11 +25,11 @@ This project addresses the four required sub-deliverables:
 
 ---
 
-## 3. System Overview
+##  System Overview
 
 The Tiny Secure SoC is composed of the following subsystems:
 
-### 3.1 CPU Core (Mini Project 1)
+###  CPU Core 
 
 A simplified **RV32I single-cycle processor** including:
 
@@ -46,7 +43,7 @@ The core executes a reduced subset of RV32I instructions sufficient for embedded
 
 ---
 
-### 3.2 Peripheral Subsystem (Mini Project 2)
+### Peripheral Subsystem
 
 All peripherals are **memory-mapped** and accessible through simple read/write operations.
 
@@ -67,7 +64,7 @@ All peripherals are **memory-mapped** and accessible through simple read/write o
 
 ---
 
-### 3.3 FIR Hardware Accelerator (Major Project 1)
+### FIR Hardware Accelerator (Major Project 1)
 
 A compute-intensive **N-tap FIR filter accelerator** is integrated to demonstrate hardware/software co-design.
 
@@ -92,7 +89,7 @@ The CPU triggers the accelerator and polls its status — demonstrating offloade
 
 ---
 
-### 3.4 SoC Integration (Major Project 2)
+###  SoC Integration 
 
 A unified **SoC Bus** connects:
 
@@ -108,7 +105,7 @@ A complete **RTL simulation environment** is provided for functional verificatio
 
 ---
 
-## 4. Memory Map (Example)
+##  Memory Map 
 
 ```
 0x0000_0000 – 0x0000_FFFF   Instruction Memory (IMEM)
@@ -130,7 +127,7 @@ A complete **RTL simulation environment** is provided for functional verificatio
 
 ---
 
-## 5. RTL-to-GDSII Preparation Flow (Conceptual Overview)
+##  RTL-to-GDSII Preparation Flow (Conceptual Overview)
 
 Although physical design is **not implemented in this repository**, the RTL is structured to support standard industrial ASIC flows:
 
@@ -169,159 +166,7 @@ The project thus forms a full front-end SoC design suitable for back-end impleme
 
 ---
 
-## 6. Verification Methodology
 
-### 6.1 Unit-Level Verification
-
-Each module includes a targeted testbench:
-
-* ALU functional tests
-* Register file write/read behavior
-* UART waveform validation
-* SPI shift operation
-* FIR accelerator test using small deterministic vectors
-
-### 6.2 Integration Verification
-
-The SoC testbench (`tb_soc.v`) validates:
-
-* Instruction fetch
-* Data memory access
-* Peripheral register writes
-* FIR accelerator handshake
-
-### 6.3 MATLAB Reference Model (For FIR Output Validation)
-
-MATLAB-generated golden vectors verify FIR output correctness:
-
-* Input stimulus
-* Expected FIR response
-* RTL output comparison
-
-### 6.4 Waveform Inspection
-
-`core.vcd` and `soc.vcd` allow visual inspection using GTKWave.
-
----
-
-## 7. Directory Structure
-
-```
-rtl/         → Synthesizable Verilog source code  
-tb/          → Testbenches  
-sw/          → Firmware, IMEM hex images  
-doc/         → Block diagrams, reference documentation  
-scripts/     → Yosys-based synthesis examples  
-constraints/ → Placeholder for ASIC/PD constraints  
-Makefile     → Build automation for simulation  
-README.md    → Project documentation  
-```
-
----
-
-## 8. Example Results to Report to Guide
-
-You are expected to demonstrate:
-
-### ✔ Functional CPU operation
-
-Running small programs (e.g., arithmetic loop, memory operations).
-
-### ✔ Correct peripheral behavior
-
-Waveforms showing UART transmission, SPI shifting, GPIO toggling.
-
-### ✔ FIR accelerator correctness
-
-Matching RTL output with MATLAB golden model.
-
-### ✔ Performance improvement
-
-Hardware FIR is significantly faster than software FIR on the CPU.
-
-### ✔ Clean RTL architecture
-
-Documented modules, memory map, and top-level integration.
-
-### ✔ ASIC-readiness
-
-RTL is synthesizable, modular, bus-clean, and has well-defined boundaries.
-
----
-
-## 9. Professional Summary for Project Guide
-
-This project demonstrates the **complete front-end design** of a RISC-V SoC, from RTL specification through simulation and accelerator integration.
-It reflects industry-standard SoC development practices:
-
-* Modular, synthesizable Verilog
-* Memory-mapped bus and peripherals
-* Hardware accelerator integration
-* Testbench-driven verification
-* MATLAB-based golden reference comparison
-* ASIC-ready design methodology
-
-The FIR accelerator showcases how hardware acceleration significantly enhances system performance for embedded signal-processing tasks.
-
----
-
-## 10. How to Build, Run & Simulate
-
-### To run CPU tests:
-
-```bash
-make sim_core
-```
-
-### To run full SoC simulation:
-
-```bash
-make sim_soc
-```
-
-View results in GTKWave:
-
-```bash
-gtkwave soc.vcd &
-```
-
----
-
-## 11. Conclusion
-
-This repository provides a high-quality educational SoC platform that unifies all four project deliverables into a single coherent design. It offers a realistic introduction to:
-
-* CPU micro-architecture
-* Peripheral and bus design
-* Hardware acceleration
-* RTL verification
-* ASIC-oriented design methodology
-
-It is suitable for academic submission, viva demonstration, and as a foundation for future ASIC or advanced RISC-V projects.
-
----
-
-## 12. Acknowledgments / Authors
-
-*Add names here*
-
----
-
-## 13. License (Optional)
-
-MIT License or institution-specific license.
-
----
-
-If you want, I can also generate:
-
-✅ A **PDF report** for submission
-✅ A **clean full-chip architecture diagram** for the README
-✅ A **presentation PPT** for your guide
-✅ A **Gantt chart / workflow diagram**
-✅ A **MATLAB FIR verification script**
-
-Just tell me what you want next.
 
 ```bash
 manohar-g@manohar-g-Lenovo-E41-55:~/rv32$ tree
