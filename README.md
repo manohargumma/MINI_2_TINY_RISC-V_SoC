@@ -206,6 +206,7 @@ manohar-g@manohar-g-Lenovo-E41-55:~/rv32$ tree
 └── yosys_short.log
 
 8 directories, 25 files
+```
 
 ##  **Conclusion**
 
