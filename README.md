@@ -1,5 +1,6 @@
 # MINI_2_TINY_RISC-V_SoC
 ![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/f1a10bcf64c7df186d8a1da8a95ccd06b8ccff33/image/full_chip_diagram.png)
+```bash
 manohar-g@manohar-g-Lenovo-E41-55:~/chatgptrv$ tree
 .
 ├── rtl
@@ -51,4 +52,6 @@ manohar-g@manohar-g-Lenovo-E41-55:~/chatgptrv$ tree
 └── yosys_short.log
 
 9 directories, 39 files
-manohar-g@manohar-g-Lenovo-E41-55:~/chatgptrv$ 
+```
+
+
