@@ -6,7 +6,7 @@ This repository presents a complete academic System-on-Chip (SoC) design project
 The SoC is designed for **low-power embedded sensor applications** and integrates:
 
 * A compact **RV32I single-cycle CPU core**
-* A **memory-mapped peripheral subsystem** (UART, SPI, GPIO)
+* A **memory-mapped peripheral subsystem** (UART, SPI, GPIO) 
 * A compute-intensive **FIR hardware accelerator**
 * A unified **lightweight SoC bus** for communication
 * Simulation and verification environments suitable for RTL signoff
