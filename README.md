@@ -18,21 +18,6 @@ manohar-g@manohar-g-Lenovo-E41-55:~/chatgptrv$ tree
 │   │   ├── imem_synth.v
 │   │   ├── pc.v
 │   │   └── regfile.v
-│   ├── design_op
-│   │   ├── alu.v
-│   │   ├── bus_arbiter.v
-│   │   ├── control.v
-│   │   ├── core.v
-│   │   ├── dmem_synth.v
-│   │   ├── fir_accel.v
-│   │   ├── gpio.v
-│   │   ├── imem_synth.v
-│   │   ├── pc.v
-│   │   ├── regfile.v
-│   │   ├── simple_bus.v
-│   │   ├── soc_top.v
-│   │   ├── spi_master.v
-│   │   └── uart.v
 │   ├── periph
 │   │   ├── gpio.v
 │   │   ├── spi_master.v
@@ -51,7 +36,8 @@ manohar-g@manohar-g-Lenovo-E41-55:~/chatgptrv$ tree
 ├── wave.vcd
 └── yosys_short.log
 
-9 directories, 39 files
+8 directories, 25 files
+
 ```
 
 
