@@ -81,6 +81,12 @@ manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$ tree
 6 directories, 21 files
 manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$ 
 ```
+
+### pre_synth Simulation
+# ***Compile RTL***
+```bash  
+
+
 ### **Conclusion (Pre-Synthesis)**
 
 Pre-synthesis simulation ensures that the RTL design is **functionally correct and ready for synthesis**, reducing the risk of errors propagating into later stages of the ASIC flow.
