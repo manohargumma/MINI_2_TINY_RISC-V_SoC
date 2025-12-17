@@ -83,7 +83,7 @@ manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$
 ```
 
 ### pre_synth Simulation
-# ***Compile RTL***
+ ***Compile RTL***
 ```bash  
 
 
