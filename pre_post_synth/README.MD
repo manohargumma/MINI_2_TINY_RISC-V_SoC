@@ -126,12 +126,3 @@ Post-synthesis simulation confirms that the synthesized gate-level design behave
 > Performing both pre-synthesis and post-synthesis simulations ensures a robust and reliable ASIC design flow by validating functionality before and after synthesis. This methodology follows industry best practices and academic tapeout programs.
 
 ---
-
-If you want next, I can:
-
-* Shorten this for **one-page report**
-* Convert into **bullet points for PPT**
-* Add **figures/flow diagram captions**
-* Prepare **viva answers**
-
-Just tell me 👍
