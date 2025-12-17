@@ -47,7 +47,40 @@ In this project, pre-synthesis simulation was performed on the **Tiny RISC-V SoC
 * Correct integration of CPU, memory, and peripherals
 
 ---
+### Direcotory structure
+```bash
+manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$ tree
+.
+├── sim
+│   └── WEEK_2
+│       ├── post_synth
+│       │   ├── post_synth.vcd
+│       │   ├── soc_post
+│       │   ├── soc_top.v
+│       │   └── tb_soc_post.v
+│       └── pre_synth
+│           ├── rtl.vcd
+│           ├── soc_rtl
+│           └── tb_soc_rtl.v
+└── src
+    ├── alu.v
+    ├── bus_arbiter.v
+    ├── control.v
+    ├── core.v
+    ├── dmem_synth.v
+    ├── fir_accel.v
+    ├── gpio.v
+    ├── imem_synth.v
+    ├── pc.v
+    ├── regfile.v
+    ├── simple_bus.v
+    ├── soc_top.v
+    ├── spi_master.v
+    └── uart.v
 
+6 directories, 21 files
+manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$ 
+```
 ### **Conclusion (Pre-Synthesis)**
 
 Pre-synthesis simulation ensures that the RTL design is **functionally correct and ready for synthesis**, reducing the risk of errors propagating into later stages of the ASIC flow.
