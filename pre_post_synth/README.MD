@@ -83,9 +83,27 @@ manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$
 ```
 
 ### pre_synth Simulation
- ***Compile RTL***
+ ***1.Compile RTL***
 ```bash  
+cd sim/WEEK_2/pre_synth
 
+iverilog -g2012 -o soc_rtl \
+  tb_soc_rtl.v \
+  ../../../src/soc_top.v \
+  ../../../src/core.v \
+  ../../../src/alu.v \
+  ../../../src/control.v \
+  ../../../src/regfile.v \
+  ../../../src/pc.v \
+  ../../../src/imem_synth.v \
+  ../../../src/dmem_synth.v \
+  ../../../src/simple_bus.v \
+  ../../../src/bus_arbiter.v \
+  ../../../src/uart.v \
+  ../../../src/spi_master.v \
+  ../../../src/gpio.v \
+  ../../../src/fir_accel.v
+```
 
 ### **Conclusion (Pre-Synthesis)**
 
