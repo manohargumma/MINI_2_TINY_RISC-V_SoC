@@ -134,7 +134,7 @@ openlane/designs/design_op/runs/RUN_*/results/synthesis/
 ├── stat.rpt
 ├── yosys.log
 ```
-###stats
+### stats
 aftter simulation in that youu see
 ```bash
 ~/OpenLane/designs/design_op/runs/RUN_2025.12.16_15.36.43/reports/synthesis$ tree
@@ -147,7 +147,58 @@ aftter simulation in that youu see
 
 1 directory, 5 files
 ```
+***pre_synth stats***
+```bash
+66. Printing statistics.
 
+=== soc_top ===
+
+   Number of wires:                 24
+   Number of wire bits:             64
+   Number of public wires:           9
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 23
+     $_ANDNOT_                       3
+     $_AND_                          3
+     $_MUX_                          5
+     $_NAND_                         1
+     $_NOT_                          2
+     $_XOR_                          3
+     sky130_fd_sc_hd__dfrtp_2        6
+```
+***post_synth stats***
+```bash
+74. Printing statistics.
+
+=== soc_top ===
+
+   Number of wires:                 29
+   Number of wire bits:             60
+   Number of public wires:          12
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and4_2         1
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__conb_1        35
+     sky130_fd_sc_hd__dfrtp_2        6
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nand3_2        1
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__or2_2          2
+     sky130_fd_sc_hd__xnor2_2        2
+
+   Chip area for module '\soc_top': 424.156800
+```
 ## 🔹 Post-Synthesis Simulation
 
 ### **Definition**
