@@ -109,6 +109,7 @@ iverilog -g2012 -o soc_rtl \
 vvp soc_rtl
 gtkwave rtl.vcd
 ```
+### Wavforms
 
 ### **Conclusion (Pre-Synthesis)**
 
