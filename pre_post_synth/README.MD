@@ -242,6 +242,16 @@ The observed behavior matched the pre-synthesis RTL simulation, confirming that 
 
 ---
 ### post_synth Simulation
+```bash
+iverilog -g2012 -o soc_post \
+  tb_soc_post.v \
+  soc_top.v \
+  $SKY130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v \
+  $SKY130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v
+
+vvp soc_post
+gtkwave post_synth.vcd
+```
 
 ### **Note on Timing Warnings**
 
