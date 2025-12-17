@@ -104,6 +104,11 @@ iverilog -g2012 -o soc_rtl \
   ../../../src/gpio.v \
   ../../../src/fir_accel.v
 ```
+***2.Run Simulation***
+```bash
+vvp soc_rtl
+gtkwave rtl.vcd
+```
 
 ### **Conclusion (Pre-Synthesis)**
 
