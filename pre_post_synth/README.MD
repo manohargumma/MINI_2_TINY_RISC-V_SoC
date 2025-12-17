@@ -257,7 +257,7 @@ vvp soc_post
 gtkwave post_synth.vcd
 ```
 ### Waveforms
-![image](
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/ee776c7813ad89ed3c0803a38d6d2530f7e753fc/pre_post_synth/images/Screenshot%20from%202025-12-17%2014-22-14.png)
 
 ### **Note on Timing Warnings**
 
