@@ -110,7 +110,7 @@ vvp soc_rtl
 gtkwave rtl.vcd
 ```
 ### Wavforms
-
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/2429690ca82974319b65e6ba941f1a364976b759/pre_post_synth/images/Screenshot%20from%202025-12-17%2014-02-50.png)
 ### **Conclusion (Pre-Synthesis)**
 
 Pre-synthesis simulation ensures that the RTL design is **functionally correct and ready for synthesis**, reducing the risk of errors propagating into later stages of the ASIC flow.
