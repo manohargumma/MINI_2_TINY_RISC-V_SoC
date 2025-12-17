@@ -202,6 +202,7 @@ aftter simulation in that youu see
 
    Chip area for module '\soc_top': 424.156800
 ```
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/4a3583625bbc4a05382180f3b2ebf2f3717c506a/pre_post_synth/images/Screenshot%20from%202025-12-17%2015-41-15.png)
 ## 🔹 Post-Synthesis Simulation
 
 ### **Definition**
