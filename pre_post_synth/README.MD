@@ -170,6 +170,8 @@ aftter simulation in that youu see
      $_XOR_                          3
 
 ```
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/40a3f070ec7380deb1a638fac1a364786b3ff52f/pre_post_synth/images/Screenshot%20from%202025-12-17%2014-30-43.png)
+
 ***post_synth stats***
 ```bash
 74. Printing statistics.
