@@ -134,6 +134,19 @@ openlane/designs/design_op/runs/RUN_*/results/synthesis/
 ├── stat.rpt
 ├── yosys.log
 ```
+###stats
+aftter simulation in that youu see
+```bash
+~/OpenLane/designs/design_op/runs/RUN_2025.12.16_15.36.43/reports/synthesis$ tree
+.
+├── 1-synthesis.AREA_0.chk.rpt
+├── 1-synthesis.AREA_0.stat.rpt
+├── 1-synthesis_dff.stat
+├── 1-synthesis_pre.stat
+└── 1-synthesis_pre_synth.chk.rpt
+
+1 directory, 5 files
+```
 
 ## 🔹 Post-Synthesis Simulation
 
@@ -177,6 +190,7 @@ Post-synthesis simulation was performed using the **synthesized netlist generate
 The observed behavior matched the pre-synthesis RTL simulation, confirming that the synthesis process preserved functional correctness.
 
 ---
+### post_synth Simulation
 
 ### **Note on Timing Warnings**
 
