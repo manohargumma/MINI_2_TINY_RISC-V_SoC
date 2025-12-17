@@ -83,7 +83,7 @@ manohar-g@manohar-g-Lenovo-E41-55:~/pre_post_synth$
 ```
 
 ### pre_synth Simulation
- ***1.Compile RTL***
+ ***step1:Compile RTL***
 ```bash  
 cd sim/WEEK_2/pre_synth
 
@@ -104,7 +104,7 @@ iverilog -g2012 -o soc_rtl \
   ../../../src/gpio.v \
   ../../../src/fir_accel.v
 ```
-***2.Run Simulation***
+***step2:Run Simulation***
 ```bash
 vvp soc_rtl
 gtkwave rtl.vcd
@@ -116,6 +116,24 @@ gtkwave rtl.vcd
 Pre-synthesis simulation ensures that the RTL design is **functionally correct and ready for synthesis**, reducing the risk of errors propagating into later stages of the ASIC flow.
 
 ---
+## Logic Synthesis using OpenLane
+***Step 1: Go to OpenLane***
+```bash
+cd openlane
+make mount
+```
+***Step 2: Run Only Synthesis***
+```bash
+prep -design design_op
+run_synthesis
+```
+***Step 3: Find Synthesized Netlist***
+```bash
+openlane/designs/design_op/runs/RUN_*/results/synthesis/
+├── soc_top.v          # Synthesized netlist
+├── stat.rpt
+├── yosys.log
+```
 
 ## 🔹 Post-Synthesis Simulation
 
