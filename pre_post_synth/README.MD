@@ -256,6 +256,8 @@ iverilog -g2012 -o soc_post \
 vvp soc_post
 gtkwave post_synth.vcd
 ```
+### Waveforms
+![image](
 
 ### **Note on Timing Warnings**
 
