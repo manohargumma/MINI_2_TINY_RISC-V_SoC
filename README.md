@@ -250,7 +250,9 @@ This makes the work not only technically successful but also academically rich a
 The design successfully generates a complete GDSII layout from RTL using the OpenLane flow on Sky130.
 The final layout shows integrated SRAM macros, standard cell logic, and peripheral interfaces like SPI, UART, and GPIO.
 Post-layout results indicate functional placement and routing, with further work needed for clean DRC/LVS and timing closure.
-![image](
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/becc35a8e820167963f1b7d5f46ab45b1f982569/image/Screenshot%20from%202026-03-28%2012-08-14.png)
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/becc35a8e820167963f1b7d5f46ab45b1f982569/image/IMG-20251216-WA0021.jpg)
+![image](https://github.com/manohargumma/MINI_2_TINY_RISC-V_SoC/blob/becc35a8e820167963f1b7d5f46ab45b1f982569/image/Screenshot%20from%202026-03-28%2009-37-05.png)
 
 
 **This project demonstrates that a complete, custom SoC — including CPU, peripherals, accelerator, and physical design flow — can be conceived, designed, and validated from scratch using open-source tools and PDKs.**
