@@ -241,10 +241,16 @@ The project reflects practical knowledge of:
 * Hardware/software co-design
 * ASIC flow concepts (synthesis, STA, P&R, DRC/LVS, GDSII)
 
+
+
 This makes the work not only technically successful but also academically rich and industry-relevant.
 
 ---
-
+**OUTPUTS**
+The design successfully generates a complete GDSII layout from RTL using the OpenLane flow on Sky130.
+The final layout shows integrated SRAM macros, standard cell logic, and peripheral interfaces like SPI, UART, and GPIO.
+Post-layout results indicate functional placement and routing, with further work needed for clean DRC/LVS and timing closure.
+![image](
 
 
 **This project demonstrates that a complete, custom SoC — including CPU, peripherals, accelerator, and physical design flow — can be conceived, designed, and validated from scratch using open-source tools and PDKs.**
