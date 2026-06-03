@@ -270,7 +270,7 @@ consider showing your support 💖 by **starring ⭐ this repository** or **fork
   </a>
   <a href="https://github.com/manohargumma?tab=repositories" target="_blank">
     <img src="https://img.shields.io/badge/👨‍💻 Explore%20My%20Projects-8A2BE2?style=for-the-badge"/>
-  </a>
+  </a> 
 </p>
 
 ---
